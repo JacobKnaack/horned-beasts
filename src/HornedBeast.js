@@ -1,8 +1,9 @@
 import React from 'react';
 
 class HornedBeast extends React.Component {
-  constructor() {
-    super(); // calls the constructor for React.Component
+  constructor(props) {
+    super(props); // calls the constructor for React.Component
+    console.log(props);
   }
   // this.props.title
   // this.props.description
