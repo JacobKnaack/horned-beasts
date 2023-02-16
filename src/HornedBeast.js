@@ -19,10 +19,14 @@ class HornedBeast extends React.Component {
   }
 
   render() {
-    console.log(this.props);
     return (
       <Card style={{ maxWidth: '400px' }}>
-        <Card.Img variant="top" src={this.props.imageUrl} alt={this.props.description} title={this.props.title} />
+        <Card.Img
+          onClick={() => this.props.setSelectBeast(this.props.beast)}
+          variant="top" src={this.props.imageUrl}
+          alt={this.props.description}
+          title={this.props.title}
+        />
         <Card.Body>
           <Card.Title>{this.props.title}</Card.Title>
           <Card.Text>
